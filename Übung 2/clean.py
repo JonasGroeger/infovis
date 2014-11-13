@@ -6,7 +6,7 @@
 A one-function module to clean up files in folders.
 
 Args:
-    -q, --quiet     Surpresses output to stdout.
+    -q, --quiet     Suppresses output.
 
 Author:
     Jonas Gröger <jonas.groeger@gmail.com>
@@ -20,7 +20,7 @@ import os
 
 def delete_recursive(path, extensions, quiet=False):
     """
-    Recusively (in subdirectories also) removes files in path whose extension matches one of
+    Recusively removes files in path whose extension matches one of
     those in the parameter extensions.
 
     Args:

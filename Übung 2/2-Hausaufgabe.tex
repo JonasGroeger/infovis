@@ -30,9 +30,6 @@
 % Usage: \enquote{To be or not to be.}
 \usepackage{csquotes}
 
-% Blindtext
-\usepackage{blindtext}
-
 % Subliminal refinements towards typographical perfection
 \usepackage{microtype}
 
@@ -138,21 +135,19 @@ Der Star Plot (manchmal auch Star Glyph) (icon-basierte Visualisierungstechnik) 
 \emph{RadViz} (\emph{Radial Coordinates Visualization}) ist eine Visualisierungstechnik, mithilfe derer multivariate Daten innerhalb einer Kreisfläche dargestellt werden. Dazu werden die Variablen durch Punkte auf der Kreislinie repräsentiert. Ein Datum wird im Gegensatz zur Visualisierungstechnik der parallelen Koordinaten nur mittels eines einzigen Punktes visualisiert. Seine Lage im Kreis ergibt sich aus den jeweiligen Variablenwerten, nämlich dort wo nach dem Hooke'schen Gesetz die Summe der verschiedenen Kräfte gleich Null ist. Unter Kraft versteht man hier eine Art Anziehungskraft der Variablen-Repräsentanten, die umso stärker ist, je höher der entsprechende Variablenwert ist. So können auf den ersten Blick Erkenntnisse über eine größere Anzahl von Daten getroffen werden, ohne die einzelnen Variablenwerte vergleichen zu müssen.
 
 \begin{longtable} {| p{0.3\textwidth} | p{0.3\textwidth} | p{0.3\textwidth} |}
-Vergleich & Parallel Coordinates & RadViz \\ \hline 
+Vergleich & Parallel Coordinates & RadViz \\ \hline
 \endfirsthead
- & Parallel Coordinates & RadViz\\  \hline 
+ & Parallel Coordinates & RadViz\\  \hline
 \endhead
 Wie leicht verständlich sind die Visualisierungstechniken? & keine Erklärung nötig & es muss zunächst verstanden werden, wie die Punkte im Kreis angeordnet werden\\ \hline
 Wie schnell sind Erkenntnisse zu gewinnen? & ohne Hilfsmittel (Einfärben o.Ä.) relativ mühsames Finden von Mustern & sofortige Erkenntnis von Verteilungen\\ \hline
 Für welche Datensätze (Art und Größe) eignen sie sich? & sollte verwendet werde, wenn die Einzelwerte der Dimensionen von Bedeutung sind, nur so viele Dimensionen wie Achsen in der Breite wahrnehmbar sind (schätzungsweise $\sim$ 7) & kein Interesse an einzelnen Werten, mehr Dimensionen darstellbar durch Verteilung auf Kreislinie, eignet sich, wenn Variablen unter einem gemeinsamen Aspekt betrachtet werden können und sich im Normalfall gegenseitig beeinflussen \\ \hline
-Können sie erweitert werden um zusätzliche Daten darzustellen? & mehr Daten: mehr Linien, höhere Grafik, Gruppieren von Datensätzen & mehr Daten: mehr Punkte, evtl. Gruppieren von Punkten \\ 
+Können sie erweitert werden um zusätzliche Daten darzustellen? & mehr Daten: mehr Linien, höhere Grafik, Gruppieren von Datensätzen & mehr Daten: mehr Punkte, evtl. Gruppieren von Punkten \\
 & mehr Dimensionen: breitere Grafik (begrenzt) & mehr Dimensionen: mehr Unterteilungen auf der Kreislinie (schätzungsweise $\sim$ 32 und mehr), Gruppieren von Variablen, dabei evtl. Verlust von Ergebnissen der Visualisierung\\ \hline
 Welche Interaktionsmöglichkeiten (Brushing, Einfärben etc) lassen sich mit den Visualisierungen
 verknüpfen? & Brushing zur Hervorhebung bestimmter Datensätze, Clustering zur Reduzierung der Komplexität & Brushing nicht möglich, da keine Informationen über Einzelwerte mehr darstellbar sind, Clustering möglich, aber evtl. Verschleiern von Zusammenhängen \\ \hline
-Was ist beim Erstellen von Visualisierungen zu bedenken? & sehr begrenzte Anzahl Dimensionen darstellbar, Auswahl der Variablen und Reihenfolge spielen eine Rolle, aber auch bei "schlechter" Wahl sind Korrelationen zu erkennen & Auswahl der Variablen und deren Anordnung, bei ungünstiger Reihenfolge der Variablen auf der Kreislinie eventuell gar keine Erkenntnisse\\ \hline
+Was ist beim Erstellen von Visualisierungen zu bedenken? & sehr begrenzte Anzahl Dimensionen darstellbar, Auswahl der Variablen und Reihenfolge spielen eine Rolle, aber auch bei \enquote{schlechter} Wahl sind Korrelationen zu erkennen & Auswahl der Variablen und deren Anordnung, bei ungünstiger Reihenfolge der Variablen auf der Kreislinie eventuell gar keine Erkenntnisse\\ \hline
 Welche Vorteile bieten die Visualisierungen? & alle Einzelwerte werden sichtbar, die Grafik kann nach ersten Erkenntnissen Schritt für Schritt weiter verbessert werden & schnelle Erkenntnisse, gut einsetzbar zur Klassifizierung unbekannter Daten\\ \hline
 \end{longtable}
-\section{Aufgabe 2.3 | Visualisierung}
-\blindtext
 
 \end{document}
