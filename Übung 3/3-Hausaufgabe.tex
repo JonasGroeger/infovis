@@ -51,10 +51,51 @@
 \subsection*{XXX}
 
 \section{Aufgabe 3.2 | Visual Clutter}
-\subsection*{XXX}
+\subsection*{Kamada-Kawai}
+\begin{itemize}
+\item Rahmenbedingungen
+\begin{itemize}
+\item ungerichtete, gewichtete Graphen
+\item gerade Kanten, keine Beschränkung bei Positionierung der Knoten
+\item zusammenhängender Graph (sonst: Zusammenhangskomponenten einzeln zeichnen)
+\end{itemize}
+\item Kriterien
+\begin{itemize}
+\item Anzahl Kantenkreuzungen reduzieren
+\item gleichmäßige Verteilung von Knoten und Kanten (wichtiger für menschliches Verständnis)
+\end{itemize}
+\item Idee
+\begin{itemize}
+\item Stahlringe werden durch Federn zusammengehalten
+\item Ziel: Minimierung der Energie dieses Systems
+\item ideale Distanz zwischen zwei Knoten proportional zur Länge eines kürzesten Pfades zwischen ihnen
+\end{itemize}
+\item Algorithmus
+\begin{itemize}
+\item Berechnung der Distanz $d_{i,j}$  (Shortest Path Algorithm - Floyd)
+\item Berechnung der Länge $l_{i,j}$ (aus Distanz und optimaler Länge)
+\item Berechnung der Federstärke $k_{i,j}$ (aus Distanz)
+\item Bestimmung der initialen Knotenpositionen
+\item Schrittweise Minimierung der Energie: Verschieben eines Knotens in stabile Position
+\end{itemize}
+
+Laufzeit: O($|V|^3 + T * |V|$), $T =$ Anzahl der Iterationen
+\item Besonderheiten
+\begin{itemize}
+\item symmetrische Graphen werden auch symmetrisch angeordnet
+\item isomorphe Graphen werden auf dieselbe Art und Weise dargestellt (evtl. verschoben, gedreht oder gespiegelt)
+\item in gewichteten Graphen: Distanz = Summe der Gewichte
+\end{itemize}
+\end{itemize}
+\subsection*{Fruchtermann-Reingold}
+\subsection*{Gemeinsamkeiten}
+\subsection*{Unterschiede}
 
 \section{Aufgabe 3.3 | Graphen übersichtlicher gestalten}
-\subsection*{XXX}
+
+\subsection*{Einfärben von Knoten oder Kanten}
+\subsection*{Gruppieren von Knoten und Kanten}
+\subsection*{Verschiedene Knotendarstellungen}
 
 \section{Aufgabe 3.4 | Visualisierung mit Gephi}
 
