@@ -53,105 +53,106 @@
 \section{Aufgabe 3.2 | Visual Clutter}
 \subsection*{Kamada-Kawai}
 \begin{itemize}
-\item Rahmenbedingungen
-\begin{itemize}
-\item ungerichtete, gewichtete Graphen
-\item gerade Kanten, keine Beschränkung bei Positionierung der Knoten
-\item zusammenhängender Graph (sonst: Zusammenhangskomponenten einzeln zeichnen)
-\end{itemize}
-\item Kriterien
-\begin{itemize}
-\item Anzahl Kantenkreuzungen reduzieren
-\item gleichmäßige Verteilung von Knoten und Kanten (wichtiger für menschliches Verständnis)
-\end{itemize}
-\item Idee
-\begin{itemize}
-\item Stahlringe werden durch Federn zusammengehalten
-\item Ziel: Minimierung der Energie dieses Systems
-\item ideale Distanz zwischen zwei Knoten proportional zur Länge eines kürzesten Pfades zwischen ihnen
-\end{itemize}
-\item Algorithmus
-\begin{itemize}
-\item Berechnung der Distanz $d_{i,j}$  (Shortest Path Algorithm - Floyd), in gewichteten Graphen: Distanz = Summe der Gewichte
-\item Berechnung der Länge $l_{i,j}$ (aus Distanz und optimaler Länge)
-\item Berechnung der Federstärke $k_{i,j}$ (aus Distanz)
-\item Bestimmung der initialen Knotenpositionen
-\item Schrittweise Minimierung der Energie: Verschieben eines Knotens in stabile Position
-\end{itemize}
+    \item Rahmenbedingungen
+    \begin{itemize}
+        \item ungerichtete, gewichtete Graphen
+        \item gerade Kanten, keine Beschränkung bei Positionierung der Knoten
+        \item zusammenhängender Graph (sonst: Zusammenhangskomponenten einzeln zeichnen)
+    \end{itemize}
+    \item Kriterien
+    \begin{itemize}
+        \item Anzahl Kantenkreuzungen reduzieren
+        \item gleichmäßige Verteilung von Knoten und Kanten (wichtiger für menschliches Verständnis)
+    \end{itemize}
+    \item Idee
+    \begin{itemize}
+        \item Stahlringe werden durch Federn zusammengehalten
+        \item Ziel: Minimierung der Energie dieses Systems
+        \item ideale Distanz zwischen zwei Knoten proportional zur Länge eines kürzesten Pfades zwischen ihnen
+    \end{itemize}
+    \item Algorithmus
+    \begin{itemize}
+        \item Berechnung der Distanz $d_{i,j}$  (Shortest Path Algorithm - Floyd), in gewichteten Graphen: Distanz = Summe der Gewichte
+        \item Berechnung der Länge $l_{i,j}$ (aus Distanz und optimaler Länge)
+        \item Berechnung der Federstärke $k_{i,j}$ (aus Distanz)
+        \item Bestimmung der initialen Knotenpositionen
+        \item Schrittweise Minimierung der Energie: Verschieben eines Knotens in stabile Position
+    \end{itemize}
 
-Laufzeit: O($|V|^3 + T * |V|$), $T =$ Anzahl der Iterationen
-\item Besonderheiten
-\begin{itemize}
-\item symmetrische Graphen werden auch symmetrisch angeordnet
-\item isomorphe Graphen werden auf dieselbe Art und Weise dargestellt (evtl. verschoben, gedreht oder gespiegelt)
-\end{itemize}
+    Laufzeit: O($|V|^3 + T * |V|$), $T =$ Anzahl der Iterationen
+
+    \item Besonderheiten
+    \begin{itemize}
+        \item symmetrische Graphen werden auch symmetrisch angeordnet
+        \item isomorphe Graphen werden auf dieselbe Art und Weise dargestellt (evtl. verschoben, gedreht oder gespiegelt)
+    \end{itemize}
 \end{itemize}
 
 
 \subsection*{Fruchtermann-Reingold}
 \begin{itemize}
-\item Rahmenbedingungen
-\begin{itemize}
-\item ungerichtete Graphen
-\item gerade Kanten, Graph begrenzt durch festen Rahmen
-\end{itemize}
-\item Kriterien
-\begin{itemize}
-\item gleichmäßige Verteilung von Knoten und Kanten innerhalb des Rahmens
-\item Anzahl Kantenkreuzungen reduzieren
-\item Streben nach symmetrischer Darstellung
-\item Nachbarknoten sollen nah beieinander liegen, Knoten sollen aber nicht zu eng zusammen gezeichnet werden
-\end{itemize}
-\item Idee
-\begin{itemize}
-\item Knoten verhalten sich wie Atomteilchen und üben anziehende und abstoßende Kräfte aufeinander aus
-\item zur Vereinfachung: anziehende Kräfte nur zwischen Nachbarknoten, abstoßende Kräfte zwischen allen Knoten
-\item Geschwindigkeit statt Beschleunigung, statisches Gleichgewicht statt dynamischem Gleichgewicht
-\end{itemize}
-\item Algorithmus
-\begin{itemize}
-\item Berechnung der abstoßenden Kräfte
-\item Berechnung der anziehenden Kräfte
-\item Verschiebung begrenzen durch Temperatur
-\item Teilchen am Rahmen stoppen
-\item Sonderfall: zwei Knoten mit derselben Position $\rightarrow$ behandeln als wären sie dicht beieinander, dann wirken große abstoßende Kräfte
-\end{itemize}
+    \item Rahmenbedingungen
+    \begin{itemize}
+        \item ungerichtete Graphen
+        \item gerade Kanten, Graph begrenzt durch festen Rahmen
+    \end{itemize}
+    \item Kriterien
+    \begin{itemize}
+        \item gleichmäßige Verteilung von Knoten und Kanten innerhalb des Rahmens
+        \item Anzahl Kantenkreuzungen reduzieren
+        \item Streben nach symmetrischer Darstellung
+        \item Nachbarknoten sollen nah beieinander liegen, Knoten sollen aber nicht zu eng zusammen gezeichnet werden
+    \end{itemize}
+    \item Idee
+    \begin{itemize}
+        \item Knoten verhalten sich wie Atomteilchen und üben anziehende und abstoßende Kräfte aufeinander aus
+        \item zur Vereinfachung: anziehende Kräfte nur zwischen Nachbarknoten, abstoßende Kräfte zwischen allen Knoten
+        \item Geschwindigkeit statt Beschleunigung, statisches Gleichgewicht statt dynamischem Gleichgewicht
+    \end{itemize}
+    \item Algorithmus
+    \begin{itemize}
+        \item Berechnung der abstoßenden Kräfte
+        \item Berechnung der anziehenden Kräfte
+        \item Verschiebung begrenzen durch Temperatur
+        \item Teilchen am Rahmen stoppen
+        \item Sonderfall: zwei Knoten mit derselben Position $\rightarrow$ behandeln als wären sie dicht beieinander, dann wirken große abstoßende Kräfte
+    \end{itemize}
 
-Laufzeit: O(T * ($|V|^2 + |E| + |V||E|$)), $T =$ Anzahl der Iterationen $=$ O(|V|) oder O(|E|)
+    Laufzeit: O(T * ($|V|^2 + |E| + |V||E|$)), $T =$ Anzahl der Iterationen $=$ O(|V|) oder O(|E|)
 
-\item Variante des Algorithmus
-\begin{itemize}
-\item Einteilung in Gitter
-\item abstoßende Kräfte nur zwischen Knoten benachbarter Quadrate
-\item besser: abstoßende Kräfte zwischen Knoten innerhalb eines Kreises um Ausgangsknoten
-\end{itemize}
+    \item Variante des Algorithmus
+    \begin{itemize}
+        \item Einteilung in Gitter
+        \item abstoßende Kräfte nur zwischen Knoten benachbarter Quadrate
+        \item besser: abstoßende Kräfte zwischen Knoten innerhalb eines Kreises um Ausgangsknoten
+    \end{itemize}
 
-Laufzeit: O(T * ($|V| + |E| + |V||E|$)), $T =$ Anzahl der Iterationen $=$ O(|V|) oder O(|E|)
-\item Ergebnisse
-\begin{itemize}
-\item symmetrische Graphen werden besonders gut dargestellt
-\item nicht alle symmetrischen, planaren Graphen werden optimal dargestellt
-\item isomorphe Graphen werden auf dieselbe Art und Weise dargestellt (evtl. verschoben, gedreht oder gespiegelt)
-\item relativ viele Kantenkreuzungen bei Bäumen, Wurzel nicht zu erkennen
-\item sehr unterschiedlich gute Ergebnisse bei dreidimensional wirkenden Graphen
-\item Variante: Dreidimensionales Layout
-\begin{itemize}
-\item Layouting in drei Dimensionen, Projektion in die Ebene
-\item keine Verbesserung der Ergebnisse im Vergleich zum 2D-Algorithmus
-\item Auswahl der Projektion durch Benutzer
-\end{itemize}
-\item Zusammenhangskomponenten driften auseinander und verbreiten sich am Rand $\rightarrow$ einzelne Berechnungen (wie bei Kamada-Kawai) oder Gitter-Variante
-\item sehr schnelle Berechnungen
-\end{itemize}
+    Laufzeit: O(T * ($|V| + |E| + |V||E|$)), $T =$ Anzahl der Iterationen $=$ O(|V|) oder O(|E|)
+    \item Ergebnisse
+    \begin{itemize}
+        \item symmetrische Graphen werden besonders gut dargestellt
+        \item nicht alle symmetrischen, planaren Graphen werden optimal dargestellt
+        \item isomorphe Graphen werden auf dieselbe Art und Weise dargestellt (evtl. verschoben, gedreht oder gespiegelt)
+        \item relativ viele Kantenkreuzungen bei Bäumen, Wurzel nicht zu erkennen
+        \item sehr unterschiedlich gute Ergebnisse bei dreidimensional wirkenden Graphen
+        \item Variante: Dreidimensionales Layout
+    \begin{itemize}
+        \item Layouting in drei Dimensionen, Projektion in die Ebene
+        \item keine Verbesserung der Ergebnisse im Vergleich zum 2D-Algorithmus
+        \item Auswahl der Projektion durch Benutzer
+    \end{itemize}
+    \item Zusammenhangskomponenten driften auseinander und verbreiten sich am Rand $\rightarrow$ einzelne Berechnungen (wie bei Kamada-Kawai) oder Gitter-Variante
+    \item sehr schnelle Berechnungen
+    \end{itemize}
 \end{itemize}
 
 \subsection*{Gemeinsamkeiten \& Unterschiede}
 \begin{itemize}
-\item Layouting ungerichteter Graphen mit geraden Kanten, Kamada-Kawai unterstützt auch gewichtete Graphen, Fruchtermann-Reingold ordnet Graphen innerhalb eines festen Rahmens an
-\item Ziel beider Verfahren: gleichmäßige Verteilung der Knoten und Kanten, Kamada-Kawai dabei eher fixiert auf Vermeidung von Kantenkreuzungen
-\item verschiedene Ideen liegen zugrunde: System aus Federn $\leftrightarrow$ Kräfte zwischen Atomteilchen
-\item verschiedene Laufzeiten, Fruchtermann-Reingold wesentlich schneller
-\item gute Darstellungen symmetrischer und isomorpher Graphen, Fruchtermann-Reingold Probleme mit komplexeren Graphen
+    \item Layouting ungerichteter Graphen mit geraden Kanten, Kamada-Kawai unterstützt auch gewichtete Graphen, Fruchtermann-Reingold ordnet Graphen innerhalb eines festen Rahmens an
+    \item Ziel beider Verfahren: gleichmäßige Verteilung der Knoten und Kanten, Kamada-Kawai dabei eher fixiert auf Vermeidung von Kantenkreuzungen
+    \item verschiedene Ideen liegen zugrunde: System aus Federn $\leftrightarrow$ Kräfte zwischen Atomteilchen
+    \item verschiedene Laufzeiten, Fruchtermann-Reingold wesentlich schneller
+    \item gute Darstellungen symmetrischer und isomorpher Graphen, Fruchtermann-Reingold Probleme mit komplexeren Graphen
 \end{itemize}
 
 \section{Aufgabe 3.3 | Graphen übersichtlicher gestalten}
@@ -209,4 +210,5 @@ Zusätzlich können Knoten und Kanten noch eingefärbt werden. Zu den zahlreiche
     \caption{Grafik nach Anwendung von Layout-Algorithmen und Einfärben der Knoten}
     \label{fig:bunt}
 \end{figure}
+
 \end{document}
