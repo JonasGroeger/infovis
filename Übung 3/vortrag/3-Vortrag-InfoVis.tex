@@ -69,8 +69,8 @@
     \begin{frame}{3.1 Visuelle Eigenschaften von Graphen}{Rendering}
         \begin{itemize}
             \item \textbf{Arten:} Interaktion im Allgemeinen
-            \item \textbf{Beispiel:} Warmwasserleitungen zwischen Städten (Übersicht) und innerhalb einzelner Städte (Detailansicht) durch zoomen erfahrbar.
-            \item \textbf{Begründung:} Ansicht auf geeignetem Abstraktionsniveau.
+            \item \textbf{Beispiel:} Warmwasserleitungen zwischen Städten (Übersicht) und innerhalb einzelner Städte (Detailansicht) durch zoomen erfahrbar
+            \item \textbf{Begründung:} Ansicht auf geeignetem Abstraktionsniveau
         \end{itemize}
     \end{frame}
 
@@ -78,7 +78,7 @@
         \begin{itemize}
             \item \textbf{Arten:} Cluster, collapsing, Hierarchien
             \item \textbf{Beispiel:} Dateisysteme, z.B. Finder, Nautilus, Explorer
-            \item \textbf{Begründung:} Ansicht auf geeignetem Abstraktionsniveau.
+            \item \textbf{Begründung:} Ansicht auf geeignetem Abstraktionsniveau
         \end{itemize}
     \end{frame}
 
@@ -161,7 +161,9 @@
 	        \item Sonderfall: zwei Knoten mit derselben Position $\rightarrow$ behandeln als wären sie dicht beieinander, dann wirken große abstoßende Kräfte
     	\end{itemize}
 
-    	Laufzeit: O(T * ($|V|^2 + |E| + |V||E|$)), $T =$ Anzahl der Iterationen $=$ O($|V|$) oder O($|E|$)
+    	Laufzeit: O(T * ($|V|^2 + |E| + |V||E|$)),
+    	
+    	 $T =$ Anzahl der Iterationen $=$ O($|V|$) oder O($|E|$)
     \end{frame}
 
     \begin{frame}{3.2 Visual Clutter}{Fruchtermann-Reingold - Algorithmus (Variante)}
@@ -171,7 +173,9 @@
         	\item besser: abstoßende Kräfte zwischen Knoten innerhalb eines Kreises um Ausgangsknoten
     	\end{itemize}
 
-    	Laufzeit: O(T * ($|V| + |E| + |V||E|$)), $T =$ Anzahl der Iterationen $=$ O($|V|)$ oder O($|E|$)
+    	Laufzeit: O(T * ($|V| + |E| + |V||E|$)),
+    	
+    	$T =$ Anzahl der Iterationen $=$ O($|V|)$ oder O($|E|$)
     \end{frame}
 
     \begin{frame}{3.2 Visual Clutter}{Fruchtermann-Reingold - Ergebnisse}
@@ -200,5 +204,62 @@
     		\item gute Darstellungen symmetrischer und isomorpher Graphen, Fruchtermann-Reingold Probleme mit komplexeren Graphen
 		\end{itemize}
 	\end{frame}
+	
+	\begin{frame}{3.3 Graphen übersichtlicher gestalten}{Gruppieren von Knoten und Kanten}
+        \begin{itemize}
+            \item mehrere Knoten zu einem Knoten gruppieren
+            \item entsprechende Kantenverbindungen
+            \item Beispiel: Netzwerk verteilt über die gesamte Welt $\rightarrow$ Einheiten nach Ländern gruppieren $\rightarrow$ Beziehungen zwischen den Ländern darstellen
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{3.3 Graphen übersichtlicher gestalten}{Einfärben von Knoten oder Kanten}
+        \begin{itemize}
+            \item thematische Gruppierungen durch verschiedene Farben kennzeichnen
+            \item schneller Überblick
+            \item Erkennen interner und externer Beziehung dieser Gruppen
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{3.3 Graphen übersichtlicher gestalten}{Verschiedene Knotendarstellungen}
+        \begin{itemize}
+            \item Knoten durch verschiedene Symbole darstellen
+            \item allgemeine Formen: Quadrate, Kreise, Dreiecke, Sterne, ...
+            \item Darstellungen, die direkt Assoziationen zur jeweiligen Gruppe hervorrufen (z.B. Gendersymbole)
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{3.3 Graphen übersichtlicher gestalten}{Interaktionstechniken}
+        \begin{itemize}
+            \item Reduzieren kognitiver Belastung
+            \item spielerische Analyse
+            \item Beispiele: zoomen, verschieben, visuelle Hervorhebungen, ...
+        \end{itemize}
+    \end{frame}
+    
+    \begin{frame}{3.4 Visualisierung mit Gephi}{Grafik direkt nach Import der Dateien}
+        \begin{figure}
+    		\centering
+    		\includegraphics[height=7cm]{includes/snapshot_start}
+		\end{figure}
+    \end{frame}
+    
+    \begin{frame}{3.4 Visualisierung mit Gephi}{Grafik nach Anwendung von Layout-Algorithmen}
+       \begin{figure}
+    		\centering
+    		\includegraphics[height=7cm]{includes/snapshot_einfarbig}
+		\end{figure}
+    \end{frame}
+    
+    \begin{frame}{3.4 Visualisierung mit Gephi}{Grafik nach Anwendung von Layout-Algorithmen und Einfärben der Knoten}
+       \begin{figure}
+    		\centering
+    		\includegraphics[height=7cm]{includes/snapshot_bunt}
+		\end{figure}
+    \end{frame}
+    
+    \begin{frame}{Informationsvisualisierung}{Übungspräsentation}
+    	Vielen Dank für die Aufmerksamkeit.
+    \end{frame}
 
 \end{document}
