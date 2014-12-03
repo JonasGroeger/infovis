@@ -50,6 +50,8 @@
 \section{Aufgabe 4.1 | Treemaps}
 \subsection*{Slice-And-Dice}
 
+Der Slice-And-Dice-Algorithmus schafft auf eine relativ einfache Art und Weise eine übersichtliche TreeMap. Zunächst wird die Grundfläche entlang einer Achse in so viele Rechtecke geteilt, wie die Wurzel Kinder hat. Die Größe eines Rechtecks entspricht dabei immer der "Größe" des jeweiligen Kindes, die sich durch die Summe aller ihm untergeordneten Blätter errechnet (sofern es nicht selbst ein Blatt ist). Im nächsten Schritt werden dann die Kindeskinder nach dem gleichen Verfahren in der Fläche des entsprechenden Kindes verteilt, wobei die Partitionierung diesmal entlang der anderen Achse durchgeführt wird. So wird weiter verfahren bis alle Blätter erreicht sind (Breitensuche), wichtig ist dabei, dass in jedem Schritt die Achse gewechselt wird, nach der die Partitionierung stattfindet. Das Ergebnis für den gegebenen Baum zeigt \cref{fig:sliceAndDice}.
+
 \begin{figure}[ht]
     \centering
     \includegraphics[height=10cm]{includes/SliceAndDice}
@@ -64,6 +66,13 @@
     \includegraphics[height=10cm]{includes/SquarifiedTreemaps}
     \caption{Squarified Treemap}
     \label{fig:squarifiedTreemap}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[height=10cm]{includes/SquarifiedTreemaps2}
+    \caption{Squarified Treemap - absteigende Reihenfolge}
+    \label{fig:squarifiedTreemap2}
 \end{figure}
 
 \subsection*{Vergleich}
