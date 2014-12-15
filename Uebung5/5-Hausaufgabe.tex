@@ -36,6 +36,8 @@
 % Footnotes in section
 \usepackage[stable]{footmisc}
 
+\usepackage{hyperref}
+
 % Better refs with \cref{}
 \usepackage[capitalize,noabbrev]{cleveref}
 
@@ -47,14 +49,15 @@
 \begin{document}
 \pagestyle{fancy} % Activate own pagestyle
 
-\section{Aufgabe 5.1 | Word Clouds}
-Text...
-%\begin{figure}[ht]
-%    \centering
-%    \includegraphics[height=10cm]{includes/SquarifiedTreemaps2}
-%    \caption{Squarified Treemap - absteigende Reihenfolge}
-%    \label{fig:squarifiedTreemap2}
-%\end{figure}
+\section{Aufgabe 5.1 | Schlagwortwolke}
+Die in \Cref{fig:schlagwortwolke} dargestellte Schlagwortwolke ist mit dem Tool \href{https://tagul.com/}{Tagul} erstellt.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{includes/schlagwortwolke}
+    \caption{Schlagwortwolke zum Thema Weihnachten}
+    \label{fig:schlagwortwolke}
+\end{figure}
 
 \section{Aufgabe 5.2 | DNA-Sequenzen}
 Text...
