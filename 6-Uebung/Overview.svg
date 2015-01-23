@@ -245,9 +245,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.64"
-     inkscape:cx="1184.8444"
-     inkscape:cy="892.50097"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="1053.7413"
+     inkscape:cy="506.65609"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -273,7 +273,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1346,6 +1346,12 @@
      inkscape:label="Graph"
      transform="translate(538.03391,-339.61816)"
      style="display:inline">
+    <path
+       style="fill:none;stroke:#bbbbbb;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 5.13015,1078.9918 477.83204,0 m 139.4531,0 433.75201,0"
+       id="path4109"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -1485,28 +1491,6 @@
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
-       x="49.840622"
-       y="1088.7338"
-       id="text3049"
-       sodipodi:linespacing="100%"><tspan
-         sodipodi:role="line"
-         x="49.840622"
-         y="1088.7338"
-         id="tspan3053">Tag 0</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
-       x="976.07428"
-       y="1088.7338"
-       id="text3049-0"
-       sodipodi:linespacing="100%"><tspan
-         sodipodi:role="line"
-         x="976.07428"
-         y="1088.7338"
-         id="tspan3053-0">Tag 14600</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
        x="0.68426514"
        y="364.45016"
        id="text3049-5"
@@ -1556,16 +1540,6 @@
          x="-73.289642"
          y="1352.5984"
          id="tspan144009">Alkohol</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 3.75,1062.5919 0,35.6117"
-       id="path144019"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 1053.6258,1062.5919 0,35.6117"
-       id="path144019-9"
-       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
@@ -1696,5 +1670,87 @@
          id="tspan145484"
          x="900.2251"
          y="-356.37802">Liebeskummer</tspan></text>
+    <g
+       id="g4073"
+       transform="translate(0,-1.4634039)">
+      <text
+         sodipodi:linespacing="100%"
+         id="text3049-0"
+         y="1090.796"
+         x="1137.7812"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3053-0"
+           y="1090.796"
+           x="1137.7812"
+           sodipodi:role="line">Tag 14600</tspan></text>
+      <g
+         id="g4036">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 1579.6875,724.62756 14.4531,0 0,32.32422 -14.5508,0"
+           id="path3234"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc"
+           transform="translate(-538.03391,339.61816)" />
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path4028"
+           sodipodi:cx="1557.1777"
+           sodipodi:cy="742.84045"
+           sodipodi:rx="2.0996094"
+           sodipodi:ry="2.0996094"
+           d="m 1559.2773,742.84045 c 0,1.15959 -0.94,2.09961 -2.0996,2.09961 -1.1595,0 -2.0996,-0.94002 -2.0996,-2.09961 0,-1.15958 0.9401,-2.09961 2.0996,-2.09961 1.1596,0 2.0996,0.94003 2.0996,2.09961 z"
+           transform="translate(-501.0222,337.86035)" />
+      </g>
+    </g>
+    <g
+       id="g4066">
+      <text
+         sodipodi:linespacing="100%"
+         id="text3049"
+         y="1088.7338"
+         x="-40.159378"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         xml:space="preserve"><tspan
+           id="tspan3053"
+           y="1088.7338"
+           x="-40.159378"
+           sodipodi:role="line">Tag 0</tspan></text>
+      <g
+         id="g4036-7"
+         style="display:inline"
+         transform="matrix(-1,0,0,1,1061.4058,-1.4634039)">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           d="m 1579.6875,724.62756 14.4531,0 0,32.32422 -14.5508,0"
+           id="path3234-9"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc"
+           transform="translate(-538.03391,339.61816)" />
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           id="path4028-4"
+           sodipodi:cx="1557.1777"
+           sodipodi:cy="742.84045"
+           sodipodi:rx="2.0996094"
+           sodipodi:ry="2.0996094"
+           d="m 1559.2773,742.84045 c 0,1.15959 -0.94,2.09961 -2.0996,2.09961 -1.1595,0 -2.0996,-0.94002 -2.0996,-2.09961 0,-1.15958 0.9401,-2.09961 2.0996,-2.09961 1.1596,0 2.0996,0.94003 2.0996,2.09961 z"
+           transform="translate(-501.0222,337.86035)" />
+      </g>
+    </g>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3049-3"
+       y="1091.1205"
+       x="548.7301"
+       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+       xml:space="preserve"><tspan
+         y="1091.1205"
+         x="548.7301"
+         sodipodi:role="line"
+         id="tspan4105">40 Jahre</tspan></text>
   </g>
 </svg>
