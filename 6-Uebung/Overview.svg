@@ -245,11 +245,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.90509668"
-     inkscape:cx="1053.7413"
-     inkscape:cy="506.65609"
+     inkscape:zoom="5.12"
+     inkscape:cx="982.10058"
+     inkscape:cy="65.06958"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1855"
      inkscape:window-height="1176"
@@ -1339,6 +1339,18 @@
          x="-33.911251"
          id="tspan144271-1"
          sodipodi:role="line">3l</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text144411-4"
+       y="1234.7814"
+       x="450.44327"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+       xml:space="preserve"
+       transform="matrix(0.99941738,0.03413073,-0.03413073,0.99941738,0,0)"><tspan
+         y="1234.7814"
+         x="450.44327"
+         id="tspan144413-8"
+         sodipodi:role="line">Empfohlene Maximaldosis</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -1752,5 +1764,12 @@
          x="548.7301"
          sodipodi:role="line"
          id="tspan4105">40 Jahre</tspan></text>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4, 2;stroke-dashoffset:0"
+       d="m 785.27523,1221.8258 c 112.5538,-13.1196 252.06117,13.1376 372.88837,-6.0767"
+       id="path3259"
+       inkscape:connector-curvature="0"
+       transform="translate(-538.03391,339.61816)"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>
