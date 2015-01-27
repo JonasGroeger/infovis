@@ -1,0 +1,4 @@
+# InfoVis Prüfung
+
+* 1. Übungsblatt: Designprinzipien, Lie-Factor, etc., Vergleich mit Grafik, Fakes lernen
+* Graphen: Nur die Basics
